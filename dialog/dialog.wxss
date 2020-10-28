@@ -1,0 +1,76 @@
+/* components/modal/modal.wxss */
+/*遮罩层*/
+.modal-mask{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+/*遮罩内容*/
+.modal-content{
+  position: absolute;
+  inset: 15% 10% 15% 10%;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+}
+/*中间内容*/
+.main-content{
+  overflow: auto;
+  border: solid 4px #ddb97f;
+  height: 100%;
+}
+
+.main-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-title{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  height: 80px;
+}
+
+.text-content {
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+.text {
+  font-size: 23px;
+  text-indent: 50px;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+
+/*底部按钮*/
+.close_banner {
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.close_banner button[plain] {
+  border: none;
+  padding: 0;
+  width: 80px;
+  margin: 0;
+}
+
+.close_icon {
+  width: 70px;
+  height: 70px;
+}
+

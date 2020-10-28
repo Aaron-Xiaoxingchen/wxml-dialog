@@ -1,0 +1,25 @@
+<view class='modal-mask' wx:if='{{show}}' bindtap='clickMask'>
+  <view class='modal-content'>
+    <scroll-view scroll-y class='main-content'>
+       <view class='main-modal'>
+          <view>
+            <image
+              class='modal-title'
+              src="https://consumerminiaclprd01.blob.core.chinacloudapi.cn/miniapp-olay-isa-fgf/wx/dsr/dsr_rules_title2.png"
+            />
+          </view>
+          <view class='text-content' wx:for='{{items}}' wx:for-item="item">
+            <view class='text'>{{item}}</view>
+          </view>
+        </view>
+    </scroll-view>
+    <view class='close_banner' bindtap='cancel'>
+        <button plain class='modal-btn'>
+          <image
+            class='close_icon'
+            src='https://consumerminiaclprd01.blob.core.chinacloudapi.cn/miniapp-olay-isa-fgf/wx/dsr/dsr_icon_close.png'
+          />
+        </button>
+    </view>
+  </view>
+</view>
